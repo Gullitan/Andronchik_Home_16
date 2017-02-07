@@ -1,0 +1,16 @@
+@media screen and (max-width: 500px) {
+    .header_nav {
+        .nav_container {
+            float: none;
+            text-align: center;
+            display: none;
+            .header_nav_element {
+                display: block;
+            }
+        }
+        .menu{
+            float: none;
+            display: block;
+        }
+    }
+}
