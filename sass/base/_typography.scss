@@ -1,6 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Pangolin|Russo+One');
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Philosopher');
 
 .wrapper{
     color: white;
     font-family: $main_font;
+}
+
+.title{
+    font-size: 50px;
+}
+
+.sub_title{
+    font-size: 30px;
+    font-family: $second_font;
+}
+
+.text{
+    font-size: 20px;
 }
