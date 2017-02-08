@@ -56,3 +56,31 @@
         align-self: center;
     }
 }
+
+.faq_wrap{
+    padding: 60px 0;
+    text-align: center;
+    .title{
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    .accordion_wrap{
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 0 15px;
+        .question{
+            padding:0 15px;
+            background-color: firebrick;
+            margin:10px 0 0 0;
+            &:hover {
+                cursor:pointer;
+                background:#FF7877;
+            }
+        }
+        .answer{
+            background-color: darkgrey;
+            padding: 10px 10px 10px;
+            border-radius: 0 0 10px 10px;
+        }
+    }
+}

@@ -54,5 +54,21 @@ $(document).ready(function () {
         $(this).attr('data-tab', 'tab' + iter);
     });
 
+    //ACCORDION
+    $('.answer').not(':first').hide();
 
+    $('.question').on('click',function() {
+
+        var findArticle = $(this).next('.answer');
+        var findWrapper = $(this).closest('.accordion_wrap');
+
+        if (findArticle.is(':visible')) {
+            findArticle.slideUp('fast');
+
+        }
+        else {
+            findWrapper.find('.answer').slideUp('fast');
+            findArticle.slideDown('fast');
+        }
+    })
 });
