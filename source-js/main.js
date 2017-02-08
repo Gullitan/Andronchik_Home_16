@@ -1,5 +1,29 @@
 $(document).ready(function () {
 
+    //SCROL
+    $('.element').click( function(){
+        var scroll_el = $(this).attr('href');
+        if ($(scroll_el).length != 0) {
+            $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 500);
+        }
+        return false;
+    });
+
+    //UP ARROW
+    var top_show = 200; // В каком положении полосы прокрутки начинать показ кнопки "Наверх"
+    var delay = 1000; // Задержка прокрутки
+    $(document).ready(function() {
+        $(window).on('scroll',function () {
+            if ($(this).scrollTop() > top_show) $('.top_arrow').fadeIn();
+            else $('.top_arrow').fadeOut();
+        });
+        $('.top_arrow').click(function () {
+            $('body, html').animate({
+                scrollTop: 0
+            }, delay);
+        });
+    });
+
     //RESPONSIVE MENU
     $('.menu').on('click', function () {
         $('.nav_container').slideToggle(500);
@@ -10,6 +34,11 @@ $(document).ready(function () {
             $('.nav_container').removeAttr('style');
             $('.menu').removeClass('open');
         }
+    });
+
+    $('.header_nav_element .element').on('click',function () {
+        $('.element').removeClass('action');
+        $(this).addClass('action');
     });
 
     //OPEN POPUP
@@ -70,5 +99,5 @@ $(document).ready(function () {
             findWrapper.find('.answer').slideUp('fast');
             findArticle.slideDown('fast');
         }
-    })
+    });
 });

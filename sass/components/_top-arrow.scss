@@ -1,0 +1,14 @@
+.top_arrow{
+    background-color: rgba(211, 211, 211, 0.5);
+    padding: 10px 12px;
+    border-radius: 50%;
+    bottom: 30px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    right: 30px;
+    &:hover{
+        background-color: rgba(211, 211, 211, 0.8);
+        color: #2e6da4;
+    }
+}
