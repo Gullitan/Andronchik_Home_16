@@ -1,0 +1,130 @@
+.modal_form {
+    max-width: 600px;
+    height: 330px;
+    background-color: #FFFFFD;
+    border-radius: 10px;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    margin-top: -165px;
+    margin-left: -145px;
+    z-index: 5;
+    padding: 20px 10px;
+    box-sizing: content-box;
+    opacity: 0;
+    display: none;
+    .close_pop {
+        color: darkred;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        display: block;
+    }
+    .modal_title {
+        font-family: $main_font;
+        font-size: 25px;
+        text-transform: uppercase;
+        color: darkgray;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .form_cont {
+        text-align: center;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 0 15px;
+        box-sizing: border-box;
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li {
+                margin-bottom: 15px;
+                .item_form {
+                    width: 100%;
+                    padding: 20px 10px;
+                    border-radius: 10px;
+                    border: 1px solid darkgray;
+                    font-size: 20px;
+                    color: gray;
+                    &::-webkit-input-placeholder {
+                        text-indent: 0;
+                        transition: text-indent 0.3s ease;
+                    }
+                    &::-moz-placeholder {
+                        text-indent: 0;
+                        transition: text-indent 0.3s ease;
+                    }
+                    &:-moz-placeholder {
+                        text-indent: 0;
+                        transition: text-indent 0.3s ease;
+                    }
+                    &:-ms-input-placeholder {
+                        text-indent: 0;
+                        transition: text-indent 0.3s ease;
+                    }
+                    &:focus {
+                        outline: none;
+                        -webkit-box-shadow: 7px -4px 15px -3px rgba(102, 172, 247, 1);
+                        -moz-box-shadow: 7px -4px 15px -3px rgba(102, 172, 247, 1);
+                        box-shadow: 7px -4px 15px -3px rgba(102, 172, 247, 1);
+                        transition: 0.5s;
+                        &::-webkit-input-placeholder {
+                            text-indent: 500px;
+                            transition: text-indent 0.3s ease;
+                        }
+                        &::-moz-placeholder {
+                            text-indent: 500px;
+                            transition: text-indent 0.3s ease;
+                        }
+                        &:-moz-placeholder {
+                            text-indent: 500px;
+                            transition: text-indent 0.3s ease;
+                        }
+                        &:-ms-input-placeholder {
+                            text-indent: 500px;
+                            transition: text-indent 0.3s ease;
+                        }
+                    }
+                }
+            }
+        }
+        .pop_btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            font-size: 15px;
+            background-color: antiquewhite;
+            color: darkgray;
+            text-transform: uppercase;
+            transition: 0.8s;
+            &:focus{
+                outline: none;
+            }
+            &:hover{
+                color:white;
+                background:darkgray;
+                transition: 0.8s;
+            }
+        }
+    }
+}
+
+.pop_overlay {
+    z-index: 3;
+    position: fixed;
+    background-color: #000;
+    opacity: 0.8;
+    -moz-opacity: 0.8;
+    filter: alpha(opacity=80);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: none;
+}
+

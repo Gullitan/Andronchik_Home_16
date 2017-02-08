@@ -1,0 +1,44 @@
+.tab_wrap{
+    max-width: 1000px;
+    margin:0 auto;
+    .tab_menu{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        .tab_element{
+            position: relative;
+            display: inline-block;
+            padding: 15px 20px;
+            margin-right: 5px;
+            background-color: grey;
+            border-radius: 5px 5px 0 0;
+            cursor: pointer;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+        .active{
+            background-color: white;
+            color: grey;
+        }
+    }
+    .tab_content{
+        background-color: white;
+        padding: 30px 20px;
+        .text{
+            color:grey;
+            font-size: 15px;
+            text-align: center;
+        }
+    }
+}
+
+.line{
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top:0;
+    left: 0;
+    background-color: darkseagreen;
+}
+

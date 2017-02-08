@@ -1,6 +1,7 @@
 .about_us_wrap{
     padding-top: 60px;
     padding-bottom: 70px;
+    text-align: center;
     .title{
         margin-top: 0;
         margin-bottom: 30px;
@@ -9,5 +10,49 @@
         max-width: 1000px;
         margin: 0 auto 30px;
         text-align: center;
+    }
+    .pop_up_btn{
+        display: inline-block;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 15px 25px;
+        color: white;
+        background-color:#457D97;
+        border-radius: 30px;
+        font-weight: 500;
+        transition: 0.5s;
+        &:hover{
+            background-color: white;
+            color:#457D97;
+            transition: 0.5s;
+        }
+    }
+}
+
+.lig_wrap{
+    padding-top: 60px;
+    padding-bottom: 70px;
+    .title{
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    .conten_img{
+        max-width: 300px;
+        padding-right: 10px;
+        margin-bottom: 10px;
+        img{
+            width: 100%;
+        }
+    }
+    .text{
+        max-width: 600px;
+        align-self: center;
     }
 }

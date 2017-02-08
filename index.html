@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Home_16</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <script src="https://use.fontawesome.com/b218254194.js"></script>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -24,21 +25,21 @@
                         <a href="#about_us" class="element">О нас</a>
                     </li>
                     <li class="header_nav_element">
-                        <a href="#" class="element">Сервис</a>
+                        <a href="#lig" class="element">Лиги</a>
                     </li>
                     <li class="header_nav_element">
                         <a href="#" class="element">Вопросы</a>
                     </li>
                 </ul>
             </nav>
-        </div>
-        <div class="title_container" id="home">
-            <h1 class="title">
-                Привет
-            </h1>
-            <h2 class="sub_title">
-                Мы команда КВН "Люди без прелюдий"
-            </h2>
+            <div class="title_container" id="home">
+                <h1 class="title">
+                    Привет
+                </h1>
+                <h2 class="sub_title">
+                    Мы команда КВН "Люди без прелюдий"
+                </h2>
+            </div>
         </div>
     </header>
     <main>
@@ -53,6 +54,93 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur atque doloribus iusto
                     tempora! Cumque dignissimos doloremque eaque fugit nam quaerat quasi quisquam similique tempore
                     voluptatibus! Est maiores pariatur sit.
+                </div>
+
+                <!--MODAL WINDOW-->
+                <div class="modal_form" id="modal_form">
+                    <span class="fa fa-times fa-2x close_pop" aria-hidden="true" id="modal_close"></span>
+                    <div class="modal_title">
+                        Давай к нам !!!
+                    </div>
+                    <form action="#" name="our" method="post" enctype="application/x-www-form-urlencoded" id="our"
+                          class="form_cont">
+                        <ul>
+                            <li>
+                                <input type="text" name="name" id="name" placeholder="Ваше имя" class="item_form">
+                            </li>
+                            <li>
+                                <input type="text" name="tel" id="tel" placeholder="Ваш телефон" class="item_form">
+                            </li>
+                        </ul>
+                        <button type="submit" class="pop_btn">
+                            Отправить
+                        </button>
+                    </form>
+                </div>
+                <div class="pop_overlay" id="overlay"></div>
+                <!--END MODAL WINDOW-->
+
+                <a href="#" class="pop_up_btn">
+                    Присоединиться
+                </a>
+            </div>
+        </section>
+        <section class="lig_wrap" id="lig">
+            <div class="container_wrap">
+                <div class="title_container">
+                    <h3 class="title">
+                        Лиги КВН
+                    </h3>
+                </div>
+                <div class="tab_wrap">
+                    <ul class="tab_menu">
+                        <li class="tab_element active">Черкасская лтга КВН</li>
+                        <li class="tab_element">Лига смеха</li>
+                        <li class="tab_element">Лига "КАВУН"</li>
+                        <li class="tab_element">Лига КВН "Кураж"</li>
+                    </ul>
+                    <div class="tab_content">
+                        <div class="content">
+                            <div class="conten_img">
+                                <img src="images/cl.png" alt="Черкасская лтга КВН">
+                            </div>
+                        <div class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet assumenda cum debitis error
+                            explicabo iusto, necessitatibus quia tenetur. Consequatur expedita fugiat magni nulla
+                            perferendis placeat quia quo soluta temporibus voluptas.
+                        </div>
+                        </div>
+                        <div class="content">
+                            <div class="conten_img">
+                                <img src="images/ls.png" alt="Лига смеха">
+                            </div>
+                            <div class="text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet assumenda cum debitis error
+                                explicabo iusto, necessitatibus quia tenetur. Consequatur expedita fugiat magni nulla
+                                perferendis placeat quia quo soluta temporibus voluptas.
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="conten_img">
+                                <img src="images/kavun.png" alt="Лига КАВУН">
+                            </div>
+                            <div class="text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet assumenda cum debitis error
+                                explicabo iusto, necessitatibus quia tenetur. Consequatur expedita fugiat magni nulla
+                                perferendis placeat quia quo soluta temporibus voluptas.
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="conten_img">
+                                <img src="images/kuraj.png" alt="Лига КВН Кураж">
+                            </div>
+                            <div class="text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet assumenda cum debitis error
+                                explicabo iusto, necessitatibus quia tenetur. Consequatur expedita fugiat magni nulla
+                                perferendis placeat quia quo soluta temporibus voluptas.
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
