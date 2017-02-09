@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <title>Home_16</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <script src="https://use.fontawesome.com/b218254194.js"></script>
+    <script src="https://use.fontawesome.com/c4b86fdbd8.js"></script>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 <div class="wrapper">
     <header class="header_wrap">
         <!--UP ARROW-->
-            <div class=" top_arrow fa fa-arrow-up fa-2x " aria-hidden="true"></div>
+        <div class=" top_arrow fa fa-arrow-up fa-2x " aria-hidden="true"></div>
         <!------------>
         <div class="container_wrap">
             <nav class="header_nav">
@@ -32,6 +32,9 @@
                     </li>
                     <li class="header_nav_element">
                         <a href="#faq" class="element">Вопросы</a>
+                    </li>
+                    <li class="header_nav_element">
+                        <a href="#rss" class="element">Подписаться</a>
                     </li>
                 </ul>
             </nav>
@@ -185,7 +188,28 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="footer_wrap " id="rss">
+        <div class="container_wrap">
+            <div class="footer_content">
+                <div class="creater">
+                    Create by Bogdan Andronchik
+                </div>
+                <form action="#" method="post" enctype="application/x-www-form-urlencoded" id="create"
+                      class="rss_form">
+                    <div class="form_title">
+                        Подписаться на нас
+                    </div>
+                    <div class="tooltip_email">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque et explicabo ipsam iste
+                        nobis quas ullam veniam.
+                    </div>
+                    <input type="email" class="input_email" id="form_email" placeholder="Введите e-mail">
+                    <button type="submit" class="email_submit">
+                        Подписаться
+                    </button>
+                </form>
+            </div>
+        </div>
     </footer>
     <script
             src="https://code.jquery.com/jquery-2.2.4.min.js"

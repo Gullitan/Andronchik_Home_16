@@ -1,0 +1,61 @@
+.footer_wrap{
+    padding-top: 30px;
+    padding-bottom: 50px;
+    .footer_content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .creater{
+            align-self: center;
+        }
+        .rss_form{
+            max-width: 800px;
+            padding-left: 15px;
+            text-align: center;
+            position: relative;
+            .form_title{
+                margin-bottom: 10px;
+            }
+            .input_email{
+                width: 95%;
+                padding: 5px 146px 5px 10px;
+                border: none;
+                border-radius: 30px;
+                color: #1b6d85;
+                margin-bottom: 10px;
+                &:focus{
+                    outline: none;
+                    -webkit-box-shadow: 0 0 30px 0 rgba(177, 126, 221, 1);
+                    -moz-box-shadow:    0 0 30px 0 rgba(177, 126, 221, 1);
+                    box-shadow:         0 0 30px 0 rgba(177, 126, 221, 1);
+                }
+            }
+            .email_submit{
+                border: none;
+                border-radius: 30px;
+                padding: 5px 20px 5px 20px;
+                margin-left: -146px;
+                background: indianred;
+                text-transform: uppercase;
+                &:hover{
+                    background-color: crimson;
+                }
+                &:focus{
+                    outline: none;
+                }
+            }
+            .tooltip_email{
+                background-color:#000;
+                border:1px solid #fff;
+                padding:10px 15px;
+                width:200px;
+                display: none;
+                color:#fff;
+                text-align:left;
+                font-size:12px;
+                position: absolute;
+                left: -195px;
+            }
+        }
+    }
+}

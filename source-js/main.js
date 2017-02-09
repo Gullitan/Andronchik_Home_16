@@ -1,10 +1,10 @@
 $(document).ready(function () {
-
+    
     //SCROL
-    $('.element').click( function(){
+    $('.element').on('click', function () {
         var scroll_el = $(this).attr('href');
         if ($(scroll_el).length != 0) {
-            $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 500);
+            $('html, body').animate({scrollTop: $(scroll_el).offset().top}, 500);
         }
         return false;
     });
@@ -12,8 +12,8 @@ $(document).ready(function () {
     //UP ARROW
     var top_show = 200; // В каком положении полосы прокрутки начинать показ кнопки "Наверх"
     var delay = 1000; // Задержка прокрутки
-    $(document).ready(function() {
-        $(window).on('scroll',function () {
+    $(document).ready(function () {
+        $(window).on('scroll', function () {
             if ($(this).scrollTop() > top_show) $('.top_arrow').fadeIn();
             else $('.top_arrow').fadeOut();
         });
@@ -36,7 +36,7 @@ $(document).ready(function () {
         }
     });
 
-    $('.header_nav_element .element').on('click',function () {
+    $('.header_nav_element .element').on('click', function () {
         $('.element').removeClass('action');
         $(this).addClass('action');
     });
@@ -86,7 +86,7 @@ $(document).ready(function () {
     //ACCORDION
     $('.answer').not(':first').hide();
 
-    $('.question').on('click',function() {
+    $('.question').on('click', function () {
 
         var findArticle = $(this).next('.answer');
         var findWrapper = $(this).closest('.accordion_wrap');
@@ -100,4 +100,13 @@ $(document).ready(function () {
             findArticle.slideDown('fast');
         }
     });
+
+    //TOOLTIP
+    if($(window).width()>500) {
+        $('.input_email').hover(function () {
+            $('.tooltip_email').fadeIn();
+        }, function () {
+            $('.tooltip_email').fadeOut();
+        });
+    }
 });
